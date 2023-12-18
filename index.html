@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+    </style>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Join Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/codec-warm-trial"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- left side section starts here-->
+        <section class="left_side col-sm-6">
+          <!-- slider for images -->
+          <div
+            id="carouselExampleFade"
+            class="carousel slide carousel-fade"
+            data-bs-ride="carousel"
+          >
+            <!-- DOTS INDICATOR -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <!-- DOTS INDICATOR ENDS HERE -->
+
+            <div class="carousel-inner">
+              <!-- IMG ONE -->
+              <div class="carousel-item active">
+                <img
+                  src="./assets/images/pic1.jpg"
+                  class="imgCarousel d-block w-100"
+                  alt="Join us img 1"
+                />
+                <div class="overlay"></div>
+                <div class="carousel-caption">
+                  <div class="my-auto text-center mx-auto d-block">
+                    <img
+                      class="logo_carousel"
+                      src="./assets/svgs/logo.svg"
+                      alt="Enata logo"
+                    />
+                    <h1>Join us!</h1>
+                    <p>
+                      Discover your career potential with us! Explore exciting
+                      opportunities that align with your passion in
+                      <span>Engineering</span>. Elevate your journey check out
+                      our <span>job openings</span> today!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- IMG ONE ENDS HERE -->
+
+              <!-- IMG TWO -->
+              <div class="carousel-item">
+                <img
+                  src="./assets/images/pic2.jpg"
+                  class="imgCarousel d-block w-100"
+                  alt="..."
+                />
+                <div class="overlay"></div>
+                <div class="carousel-caption">
+                  <img
+                    class="logo_carousel"
+                    src="./assets/svgs/logo.svg"
+                    alt="Enata logo"
+                  />
+                  <p>Join ENATA and take Control of Your Career.</p>
+                </div>
+              </div>
+              <!-- IMG TWO ENDS HERE -->
+
+              <!-- IMG THREE -->
+              <div class="carousel-item">
+                <img
+                  src="./assets/images/pic3.jpg"
+                  class="imgCarousel d-block w-100"
+                  alt="..."
+                />
+                <div class="overlay"></div>
+                <div class="carousel-caption">
+                  <img
+                    class="logo_carousel"
+                    src="./assets/svgs/logo.svg"
+                    alt="Enata logo"
+                  />
+                  <p>Manage Your Job Applications with Our User-Friendly Recruitment Platform.
+                    Track Your Progress, and Land Your Dream Job.</p>
+                </div>
+              </div>
+              <!-- IMG THREE ENDS HERE -->
+            </div>
+
+            <!-- <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button> -->
+          </div>
+        </section>
+        <!-- right side section ends here -->
+
+        <!-- left side section starts here -->
+        <section class="right-side col-sm-6">
+          <!-- FORMS -->
+          <div class="col-lg-12">
+            <div class="progress">
+              <div
+                aria-valuemax="100"
+                aria-valuemin="0"
+                aria-valuenow="50"
+                class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                role="progressbar"
+                style="width: 0%"
+              ></div>
+            </div>
+            <div id="qbox-container">
+              <form
+                class="needs-validation"
+                id="form-wrapper"
+                method="post"
+                name="form-wrapper"
+                novalidate
+              >
+                <!-- STEPS FORM -->
+                <div id="steps-container">
+                  <div class="step">
+                    <div class="title-container">
+                      <h1>Current job openings</h1>
+                      <p>Select one of the matching job openings below:</p>
+                    </div>
+                    <div class="form-group" id="search_wrapper">
+                      <input
+                        type="text"
+                        id="search_field"
+                        class="form-control"
+                        name="search_title"
+                        placeholder="Find Jobs"
+                      />
+                      <button
+                        type="submit"
+                        id="search_button"
+                        class="btn btn-default"
+                      >
+                        Search
+                      </button>
+                    </div>
+
+                    <!-- JOBS CARDS -->
+    <div class="jobsCardsFlex d-flex flex-sm-row flex-column ">
+
+        <div class="jobCards">
+            <div class="info">
+              <div class="textFlex">
+                <img
+                  src="./assets/svgs/jobIcon.svg"
+                  alt=""
+                  height="70%"
+                  width="28px"
+                />
+                <span>CNC OPERATOR</span>
+              </div>
+              <div class="textTwo">
+                <p>
+                  Dubai, United Arab Emirates <br />
+                  Posted on on 08/12/2023
+                </p>
+
+                <div class="trending">
+                  <img
+                    src="./assets/svgs/arrowUp.svg"
+                    alt=""
+                    height="70%"
+                    width="13px"
+                  />
+                  <span>TRENDING</span>
+                </div>
+              </div>
+              <div class="details">
+                <span>Mechanical Production duties:</span>
+                <ul class="list-group">
+                  <li>
+                    Ensure that the CNC machines and machine room are
+                    clean, in proper state of operating at all times
+                  </li>
+                  <li>Operate all CNC machines...</li>
+                </ol>
+              </div>
+              <div class="icons">
+                  <img
+                  src="./assets/svgs/download.svg"
+                  alt=""
+                  height="70%"
+                  width="28px"
+                />
+                <img
+                src="./assets/svgs/view.svg"
+                alt=""
+                height="70%"
+                width="28px"
+              />
+              </div>
+            </div>
+          </div>
+
+          <div class="jobCards">
+            <div class="info">
+              <div class="textFlex">
+                <img
+                  src="./assets/svgs/jobIcon.svg"
+                  alt=""
+                  height="70%"
+                  width="28px"
+                />
+                <span>CNC OPERATOR</span>
+              </div>
+              <div class="textTwo">
+                <p>
+                  Dubai, United Arab Emirates <br />
+                  Posted on on 08/12/2023
+                </p>
+
+                <div class="trending">
+                  <img
+                    src="./assets/svgs/arrowUp.svg"
+                    alt=""
+                    height="70%"
+                    width="13px"
+                  />
+                  <span>TRENDING</span>
+                </div>
+              </div>
+              <div class="details">
+                <span>Mechanical Production duties:</span>
+                <ul class="list-group">
+                  <li>
+                    Ensure that the CNC machines and machine room are
+                    clean, in proper state of operating at all times
+                  </li>
+                  <li>Operate all CNC machines...</li>
+                </ol>
+              </div>
+              <div class="icons">
+                  <img
+                  src="./assets/svgs/download.svg"
+                  alt=""
+                  height="70%"
+                  width="28px"
+                />
+                <img
+                src="./assets/svgs/view.svg"
+                alt=""
+                height="70%"
+                width="28px"
+              />
+              </div>
+            </div>
+          </div>
+    </div>
+                    <!-- JOBS CARDS ENDS HERE -->
+                  </div>
+                  <div class="step">
+                    <div class="title-container">
+                      <h1>Submit your candidacy</h1>
+                      <p>
+                        We do not seem to know about you. If you wish to join
+                        us, please tell us more about yourself:
+                      </p>
+                    </div>
+                    <div class="mt-1">
+                      <label class="form-label">Complete Name:</label>
+                      <input
+                        class="form-control"
+                        id="full_name"
+                        name="full_name"
+                        type="text"
+                      />
+                    </div>
+                    <div class="mt-2">
+                      <label class="form-label">Complete Address:</label>
+                      <input
+                        class="form-control"
+                        id="address"
+                        name="address"
+                        type="text"
+                      />
+                    </div>
+                    <div class="mt-2">
+                      <label class="form-label">Email:</label>
+                      <input
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        type="email"
+                      />
+                    </div>
+                    <div class="mt-2">
+                      <label class="form-label">Phone / Mobile Number:</label>
+                      <input
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                        type="text"
+                      />
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col-lg-2 col-md-2 col-3">
+                        <label class="form-label">Age:</label>
+                        <div class="input-container">
+                          <input
+                            class="form-control"
+                            id="age"
+                            name="age"
+                            type="text"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-lg-8">
+                        <div id="input-container">
+                          <input
+                            class="form-check-input"
+                            name="gender"
+                            type="radio"
+                            value="male"
+                          />
+                          <label class="form-check-label radio-lb">Male</label>
+                          <input
+                            class="form-check-input"
+                            name="gender"
+                            type="radio"
+                            value="female"
+                          />
+                          <label class="form-check-label radio-lb"
+                            >Female</label
+                          >
+                          <input
+                            checked
+                            class="form-check-input"
+                            name="gender"
+                            type="radio"
+                            value="undefined"
+                          />
+                          <label class="form-check-label radio-lb"
+                            >Rather not say</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="step">
+                    <div class="title-container">
+                      <h1>Submit your candidacy</h1>
+                      <p>
+                        We do not seem to know about you. If you wish to join
+                        us, please tell us more about yourself:
+                      </p>
+                    </div>
+                    <div class="mt-1">
+                      <label class="form-label">Expected Salary:</label>
+                      <input
+                        class="form-control"
+                        id="salary"
+                        name="expected_salary"
+                        type="number"
+                      />
+                    </div>
+                    <div class="mt-2">
+                        <label for="formFileMultiple" class="form-label">Upload your picture</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                      </div>
+                      <div class="mt-2">
+                        <label for="formFileMultiple" class="form-label">Upload your resume</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                      </div>
+                    <div class="mt-2">
+                      <label class="form-label">Tell us about yourself:</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                    </div>
+                   
+                   
+                 
+                  </div>
+                  <div class="step">
+                    <div class="mt-1">
+                      <div class="closing-text">
+                        <h4>That's about it! Thanks for applying!</h4>
+                        <p>
+                          Our team will assess your information and will let contact 
+                          you soon.
+                        </p>
+                        <p>Click on the submit button to continue.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="success">
+                    <div class="mt-5">
+                      <h4>Success! We'll get back to you ASAP!</h4>
+                      <p>
+                        Meanwhile, look at other jobs that you have interest on, thank you and good luck!.
+                      </p>
+                      <a class="back-link" href=""
+                        >Go back from the beginning ➜</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- STEPS FORM ENDS HERE -->
+                <div class="row" id="q-box__buttons">
+                  <div class="row column-gap-5">
+                    <!-- NEXT BTN -->
+                    <button class="col-sm-6" id="prev-btn" type="button">
+                      <img
+                        src="./assets/svgs/left.svg"
+                        class="imgCarousel d-block w-100"
+                        alt="..."
+                      />
+                    </button>
+                    <!-- NEXT BTN ENDS HERE -->
+
+                    <!-- PREV BTN -->
+                    <button class="col-sm-6" id="next-btn" type="button">
+                      <img
+                        src="./assets/svgs/right.svg"
+                        class="imgCarousel d-block w-100"
+                        alt="..."
+                      />
+                    </button>
+                    <!-- PREV BTN ENDS HERE -->
+                  </div>
+
+                  <button
+                    lass="col-sm-6"
+                    id="submit-btn"
+                    class="submit-button"
+                    type="submit"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div id="preloader-wrapper">
+            <div id="preloader"></div>
+            <div class="preloader-section section-left"></div>
+            <div class="preloader-section section-right"></div>
+          </div>
+        </section>
+        <!-- left side section ends here -->
+      </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
