@@ -109,7 +109,8 @@ body {
   font-weight: 900 !important;
 }
 .container .row .right-side {
-  /* PRELOADER */
+  /* PRELOADER STARTS HERE */
+  /* PRELOADER ENDS HERE */
   /* FORMS */
   /* MEDIA QUERIES */
   /* MEDIA QUERIES ENDS HERE */
@@ -317,12 +318,7 @@ body {
 .container .row .right-side .step {
   display: none;
 }
-.container .row .right-side button#prev-btn,
 .container .row .right-side button#next-btn {
-  position: relative;
-  width: 70px;
-  border-radius: 80px;
-  height: 70px;
   background: #c5c5c5;
   margin: 0 auto;
   margin-top: 40px;
@@ -330,6 +326,31 @@ body {
   cursor: pointer;
   transition: color 0.3s;
   border: 0;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+.container .row .right-side button#prev-btn {
+  background: #c5c5c5;
+  margin: 0 auto;
+  margin-top: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.3s;
+  border: 0;
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  left: 40px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
 }
 .container .row .right-side button#submit-btn {
   font-size: 17px;
@@ -391,6 +412,25 @@ body {
 .container .row .right-side #success {
   display: none;
 }
+@media (min-width: 1440px) {
+  .container .row .right-side button#prev-btn {
+    background: #c5c5c5;
+    margin: 0 auto;
+    margin-top: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: color 0.3s;
+    border: 0;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: -112px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+}
 @media (min-width: 990px) and (max-width: 1199px) {
   .container .row .right-side #title-container {
     padding: 80px 28px 28px 28px;
@@ -415,6 +455,20 @@ body {
   }
   .container .row .right-side #title-container {
     padding-top: 50px;
+  }
+  .container .row .right-side button#prev-btn,
+  .container .row .right-side button#next-btn {
+    position: relative;
+    width: 70px;
+    border-radius: 80px;
+    height: 70px;
+    background: #c5c5c5;
+    margin: 0 auto;
+    margin-top: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: color 0.3s;
+    border: 0;
   }
 }
 @media (max-width: 560px) {
