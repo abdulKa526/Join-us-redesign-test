@@ -160,25 +160,44 @@
                       <h1>Current job openings</h1>
                       <p>Select one of the matching job openings below:</p>
                     </div>
+                    <!-- SEARCH  STARTS HERE -->
                     <div class="form-group" id="search_wrapper">
-                      <input
+
+                      <div class="d-flex flex-row">
+                        <input
                         type="text"
                         id="search_field"
                         class="form-control"
                         name="search_title"
                         placeholder="Find Jobs"
                       />
+                      <div class="vl"></div>
+
+                      <div class="d-flex flex-md-row">
+                        <input
+                        type="text"
+                        id="search_field"
+                        class="form-control"
+                        name="search_title"
+                        placeholder="Near Location"
+                      />
                       <button
                         type="submit"
                         id="search_button"
                         class="btn btn-default"
                       >
-                        Search
+                        <img src="./assets/svgs/search.svg" alt="">
                       </button>
+                      </div>
+                    
+                      </div>
+                      
+                      
                     </div>
+                    <!-- SEARCH ENDS HERE -->
 
                     <!-- JOBS CARDS -->
-    <div class="jobsCardsFlex d-flex flex-column flex-lg-row  ">
+    <div class="jobsCardsFlex d-flex flex-column flex-xl-column flex-xxl-row">
 
         <div class="jobCards">
             <div class="info">

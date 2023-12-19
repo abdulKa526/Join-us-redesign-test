@@ -186,18 +186,21 @@ body {
   overflow: hidden !important;
 }
 .container .row .right-side #search_wrapper {
-  height: 40px;
+  height: 70px;
   position: relative;
   margin-bottom: 30px;
+  border-radius: 10px;
+  background: #ededed;
+}
+.container .row .right-side .vl {
+  border-left: 1px solid #b1b1b1;
+  padding: 10px 10px;
 }
 .container .row .right-side #search_field {
-  height: 40px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-color: #cccccc;
+  height: 70px;
   outline: none;
+  border: none;
+  background-color: rgba(240, 248, 255, 0);
 }
 .container .row .right-side #search_field_location {
   height: 40px;
@@ -209,16 +212,14 @@ body {
   outline: none;
 }
 .container .row .right-side #search_button {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
   position: absolute;
   top: 0;
   right: 0;
   font-size: 17px;
-  width: 120px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
+  border-radius: 0px 10px 10px 0px;
+  background: #1f2a36;
 }
 .container .row .right-side .title-container h1 {
   color: #1f2a36;
@@ -282,12 +283,11 @@ body {
 }
 .container .row .right-side .jobsCardsFlex .jobCards .info .details {
   color: #000;
-  font-family: SF Pro Display;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  margin-top: 40px;
+  margin-top: 9%;
 }
 .container .row .right-side .jobsCardsFlex .jobCards .info .details span {
   font-weight: 700 !important;
