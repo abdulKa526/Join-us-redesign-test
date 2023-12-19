@@ -82,7 +82,7 @@ submitBtn.addEventListener('click', () => {
  
     const timer = ms => new Promise(res => setTimeout(res, ms));
  
-    timer(3000)
+    timer(2000)
         .then(() => {
             bodyElement.classList.add('loaded');
         }).then(() => {
